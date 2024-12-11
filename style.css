@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h3{
+    color: white;
+}
+ul {
+    list-style-type: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+li{
+    color: white;
+    height: 50px;
+}
+
+
+.row {
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.main {
+    width: 100vw;
+
+    height: 100vh;
+
+    overflow-x: hidden;
+
+}
+
+
+
+.one {
+    height: 400px;
+    padding: 10px;
+
+}
+
+.two {
+    height: 400px;
+    padding: 10px;
+}
+
+.three {
+    height: 400px;
+    padding: 10px;
+
+}
+
+.four {
+    height: 400px;
+    padding: 10px;
+}
+
+.five {
+    height: 400px;
+    padding: 10px;
+}
+
+.six {
+    height: 150px;
+    padding: 10px;
+}
+.hide{
+    height: 400px;
+    padding: 10px;
+}
+.hide1{
+    height: 300px;
+    padding: 10px;
+}
+
+.hide2{
+    height: 350px;
+    padding: 10px;
+}
+
+
+
+
+
+
+.potrait {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background:url('asset/potrait.JPG');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  
+
+}
+.socials{
+    height: 60px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.534);  
+    margin: auto;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.socials a {
+    font-size: 30px;
+    color: white; /* Change this to your desired color */
+    text-decoration: none; /* Remove underline */
+}
+
+.socials a:hover {
+    color: lightgray; /* Change color on hover if desired */
+}
+
+.about-me {
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    align-content: center;
+    background-color: rgb(19, 19, 19);
+}
+
+.quote {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(rgba(41, 41, 41, 0.63), rgba(0, 0, 0, 0.616)), url('asset/qtw.gif');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 15px;
+    align-content: center;
+    
+
+}
+.quote p{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+  
+}
+
+.qualification {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(19, 19, 19);
+    padding: 15px;
+    align-content: center;
+}
+
+.skills {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(19, 19, 19);
+    align-content: center;
+}
+
+.projects {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgb(19, 19, 19);
+    align-content: center;
+}
+
+.hide1-bnr{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background:url('asset/hide1.gif');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+.hide2-bnr{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(rgba(17, 14, 14, 0.904), rgba(0, 0, 0, 0.836)), url('asset/hide2.gif');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+.hide-bnr{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background:url('asset/hide1.gif');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+
+}
+
+.carousel-item {
+    text-align: center;
+    font-size: 80px; /* Adjust icon size */
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width: 768px) {
+    .main {
+        overflow-y: auto;
+        /* Allow vertical scroll on mobile */
+    }
+
+
+    .about-me {
+        font-size: 15px;
+    }
+    .quote p{
+        font-size: 11px;
+    }
+   .four{
+    height: 300px;
+   }
+   .five{
+    height: 350px;
+   }
+   .qli {
+    font-size: 15px;
+   }
+   .main{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+   }
+   .hide{
+    display: none;
+}
+}
+
+@media (min-width: 769px){
+    .hide1{
+        display: none;
+    }
+    .hide2{
+        display: none;
+    }
+    li{
+        font-size: 20px;
+    }
+    
+.carousel-item {
+    text-align: center;
+    font-size: 150px; /* Adjust icon size */
+    color: rgb(255, 255, 255);
+}
+
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.qli li {
+    animation: fadeIn 0.5s ease forwards; /* Fade-in effect */
+}
+
+
+.ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    padding: 10px 0;
+}
+
+.ticker-content {
+    display: inline-block;
+    animation: ticker-animation 15s linear infinite;
+}
+
+.ticker-item {
+    display: inline-block;
+    margin: 0 20px; /* Adjust spacing between logos */
+    font-size: 24px; /* Adjust size of logos */
+}
+
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
